@@ -1,0 +1,115 @@
+body {
+    width: 100vw;
+    background-color: #fff;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contents {
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Socials */
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    transform: scale(1.1);
+  }
+
+
+.parallax {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/goldengate.jpg');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.separator {
+    width: 100%;
+    height: 10px;
+    background-color: coral;
+}
+
+#main-footer{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#main-container {
+    padding-top: 500px;
+    padding-bottom: 500px;
+    text-align: center;
+}
+
+#main-header{
+    background-color: coral;
+    color: #fff;
+}
+
+#main-container h{
+    padding-top: 500px;
+    padding-bottom: 500px;
+    text-align: center;
+}
+
+#main-container {
+    padding-top: 500px;
+    padding-bottom: 500px;
+    text-align: center;
+}
+
+#navbar {
+    background-color: #555;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#navbar a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 7px 5px 0px;
+}
+
+#navbar a:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+    /* background-color: darkgrey; */
+    /* color: #555; */
+}
