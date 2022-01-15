@@ -46,7 +46,7 @@ body {
 
 .parallax {
     width: 100%;
-    height: auto;
+    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/goldengate.jpg');
     background-attachment: fixed;
     background-position: top;
@@ -69,26 +69,11 @@ body {
 }
 
 #main-container {
-    padding-top: 500px;
-    padding-bottom: 500px;
+    display: grid;
+    place-items: center;
+    height: 100%;
     text-align: center;
-}
-
-#main-header{
-    background-color: coral;
     color: #fff;
-}
-
-#main-container h{
-    padding-top: 500px;
-    padding-bottom: 500px;
-    text-align: center;
-}
-
-#main-container {
-    padding-top: 500px;
-    padding-bottom: 500px;
-    text-align: center;
 }
 
 #navbar {
@@ -110,6 +95,4 @@ body {
 #navbar a:hover{
     transform: scale(1.1);
     font-weight: bold;
-    /* background-color: darkgrey; */
-    /* color: #555; */
 }
