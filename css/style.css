@@ -1,5 +1,6 @@
 a {
     text-decoration: none;
+    font: 'Martel Sans';
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,6 +19,7 @@ body {
     font-size: 16px;
     line-height: 1.6em;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .container {
@@ -28,18 +30,17 @@ body {
 
 .contents {
     text-align: justify;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.flex-contents {
-    margin: 1% 20%;
+.flex-container {
     display: flex;
     justify-content: space-around;
     text-align: justify;
 }
 
-.flex-contents-item {
+.flex-content {
 }
 
 .icon-inline {
@@ -73,7 +74,8 @@ body {
     width: 100%;
     height: 100vh;
 }
-.parallax#about-me{
+
+.parallax#portfolio{    
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/cliffside.jpg');
         background-attachment: fixed;
         background-position: top;
@@ -88,6 +90,20 @@ body {
     background-size: cover;
 }
 
+.parallax-container {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: clamp(1rem, .5rem + 1vw, 3rem);
+}
+.parallax-container h1,h3{
+   letter-spacing: .1em;
+   font-family: 'Merriweather';
+   font-style: oblique;
+}
+
 .separator {
     width: 100%;
     height: 10px;
@@ -96,6 +112,7 @@ body {
 
 #about-me {
     justify-content: flex-start;
+    margin: 1% 5%;
 }
 
 #contact-me ul{
@@ -115,8 +132,16 @@ body {
     text-align: center;
     padding: 20px;
 }
+#main-footer .flex-contents-item{
+    margin-bottom: 80px;
+    text-align: left;
+}
+#main-footer .flex-contents-item ul{
+    margin-bottom: 80px;
+    padding: 5%;
+}
 
-#main-container {
+/* #main-container {
     display: grid;
     place-items: center;
     height: 100%;
@@ -128,6 +153,19 @@ body {
    letter-spacing: .1em;
    font-family: 'Merriweather';
    font-style: oblique;
+} */
+#my-projects{
+    flex-direction: column;
+    margin: 0 5%;
+}
+#my-projects .left-side-project{
+    margin-right: 15%;
+    text-align: left;
+    
+}
+#my-projects .right-side-project{
+    margin-left: 15%;
+    text-align: right;
 }
 
 #navbar {
@@ -151,20 +189,21 @@ body {
 
 #who-am-i {
     font-family: 'Oswald';
+    margin: 0, 0, 0, 10%;
+    display: inline-flex;
 }
 #who-am-i span{
     font-family: 'Oswald', sans-serif;
-    display: inline-block;
     line-height: 95%;
 }
 #who-am-i .left-words{
-    font-size: clamp(1rem, .5rem + 10vw, 10rem);
+    font-size: clamp(2rem, .5rem + 10vw, 10rem);
     letter-spacing: -5px;
     line-height: 90%;
     text-align: right;
 }
 #who-am-i .right-words{
-    font-size: clamp(2rem, 1rem + 20vw, 20rem);
+    font-size: clamp(4rem, 1rem + 20vw, 20rem);
     font-weight: 100;
     margin-left: -0.04em;
     margin: 0;
