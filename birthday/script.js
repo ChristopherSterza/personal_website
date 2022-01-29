@@ -1,6 +1,6 @@
 myCard = document.querySelector(".card");
 mycb = document.querySelector("#cb1");
-myButton = document.querySelector("button");
+myButton = document.querySelector("#heart");
 
 var numCover = 1;
 
@@ -29,9 +29,5 @@ myButton.onclick = function() {
             url = 'images/masks.png';
             break;
     }
-    console.log(url);
     document.querySelector("#cover").src = url;
-    console.log(`img url:${document.querySelector("#cover").url}`);
-    document.querySelector(".description").innerHTML = `Card Cover ${numCover}`;
-
 }

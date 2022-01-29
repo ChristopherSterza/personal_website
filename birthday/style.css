@@ -31,6 +31,7 @@ h4 {
 .card {
   color: #013243; /*SHERPA BLUE*/
   position: absolute;
+  z-index: 2;
   top: 50%;
   left: 50%;
   /* width: 300px;
@@ -148,13 +149,16 @@ h4 {
   text-align: center;
 }
 
-button {
-  width: 200px;
-  height: 50px;
+#heart {
+  z-index: 1;
+  position: absolute;
+  /* top: 90%; */
+  top: 75%;
+  top: clamp(75%, 85vw, 90%);
+  left: 46.5%;
 }
-
-.description {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+#heart:active {
+  transform: scale(1.05);
 }
 
 /* CSS tricks for toggleable animations */
