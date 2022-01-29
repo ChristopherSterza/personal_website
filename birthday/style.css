@@ -149,13 +149,19 @@ h4 {
   text-align: center;
 }
 
-#heart {
+/* #heart {
   z-index: 1;
   position: absolute;
-  /* top: 90%; */
   top: 75%;
   top: clamp(75%, 85vw, 90%);
   left: 46.5%;
+} */
+#heart {
+  display: inline;
+  z-index: 1;
+  position: relative;
+  top: 40px;
+  left: 45%;
 }
 #heart:active {
   transform: scale(1.05);
