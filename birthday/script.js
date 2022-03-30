@@ -1,40 +1,33 @@
-myCard = document.querySelector(".card");
-mycb = document.querySelector("#cb1");
-myButton = document.querySelector("#heart");
+myCard = document.querySelector('.card');
+mycb = document.querySelector('#cb1');
+myButton = document.querySelector('#heart');
+images = [];
 
-var numCover = 1;
+var numCover = 0;
 
-myCard.onclick = function(e) {
-    if (e.target != myButton){
-        if (mycb.checked){
-            myButton.style.display = "block";
-        } else {
-            myButton.style.display = "none";
-        }
-        mycb.checked = !mycb.checked;
+window.onload = function (e) {
+  images = document.getElementsByClassName('coverImg');
+  for (const el of images) {
+    el.classList.remove('in');
+  }
+  numCover = images.length - 1;
+  images[numCover].classList.add('in');
+};
+
+myCard.onclick = function (e) {
+  if (e.target != myButton) {
+    if (mycb.checked) {
+      myButton.style.display = 'block';
+    } else {
+      myButton.style.display = 'none';
     }
-}
+    mycb.checked = !mycb.checked;
+  }
+};
 
-myButton.onclick = function(e) {
-    var url = '';
-    numCover++;
-    if (numCover > 5) numCover = 1;
-    switch (numCover){
-        case 1:
-            url = 'images/romantic.png';
-            break;
-        case 2:
-            url = 'images/smokey.png';
-            break;
-        case 3:
-            url = 'images/covid.png';
-            break;
-        case 4:
-            url = 'images/injury.png';
-            break;
-        case 5:
-            url = 'images/masks.png';
-            break;
-    }
-    document.querySelector("#cover").src = url;
-}
+myButton.onclick = function (e) {
+  images[numCover].classList.remove('in');
+  numCover++;
+  if (numCover >= images.length) numCover = 0;
+  images[numCover].classList.add('in');
+};

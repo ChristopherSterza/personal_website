@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
 body {
-  font-family: "Indie Flower", cursive !important;
+  font-family: 'Indie Flower', cursive !important;
   background: #ffd9f6;
   /* background: #ffdcf7; #FDE3A7 CAPE HONEY */
   margin: 0px;
@@ -18,7 +18,7 @@ h4 {
   /* font-size: clamp(26px, 26px + 3vw, 72px); */
   font-size: clamp(2rem, 5vw, 5rem);
   line-height: 1px;
-  font-family: "Amatic SC", cursive !important;
+  font-family: 'Amatic SC', cursive !important;
 }
 
 .color1 {
@@ -61,7 +61,7 @@ h4 {
 } */
 
 .card:before {
-  content: "";
+  content: '';
   position: absolute;
   top: -5px;
   left: 0;
@@ -73,7 +73,7 @@ h4 {
 }
 
 .card:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: -5px;
@@ -102,8 +102,13 @@ h4 {
 }
 
 .card .imgBox img {
+  position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.coverImg:not(.in) {
+  display: none;
 }
 /* .card .imgBox img {
   min-width: 250px;
@@ -168,18 +173,18 @@ h4 {
 }
 
 /* CSS tricks for toggleable animations */
-[type="checkbox"] {
+[type='checkbox'] {
   display: none;
 }
-[type="checkbox"]:checked ~ .card {
+[type='checkbox']:checked ~ .card {
   transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1.2);
   box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5),
     0 10px 100px rgba(0, 0, 0, 0.5);
 }
-[type="checkbox"]:checked ~ .card .imgBox {
+[type='checkbox']:checked ~ .card .imgBox {
   transform: rotateY(-135deg);
 }
-[type="checkbox"]:checked ~ .card .bark {
+[type='checkbox']:checked ~ .card .bark {
   opacity: 1;
   transition: 0.6s;
   box-shadow: 300px 200px 100px rgba(0, 0, 0, 0.4) inset;
