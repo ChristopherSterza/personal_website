@@ -1,52 +1,57 @@
 a {
-    text-decoration: none;
-    font: 'Martel Sans';
+  text-decoration: none;
+  font: 'Martel Sans';
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fira Sans';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fira Sans';
 }
 
 p {
-    font-family: 'Martel Sans';
+  font-family: 'Martel Sans';
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #fff;
-    color: #555;
-    font-family: Merriweather;
-    font-size: 16px;
-    line-height: 1.6em;
-    margin: 0;
-    overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  color: #555;
+  font-family: Merriweather;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
 .contents {
-    text-align: justify;
-    margin-left: 5%;
-    margin-right: 5%;
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .flex-container {
-    display: flex;
-    justify-content: space-around;
-    text-align: justify;
+  display: flex;
+  justify-content: space-around;
+  text-align: justify;
 }
 
 .flex-content {
 }
 
 .icon-inline {
-    height: 1em;
-    vertical-align: text-bottom;
+  height: 1em;
+  vertical-align: text-bottom;
 }
 
 /* Old Icon bar CSS */
@@ -68,85 +73,89 @@ body {
 } */
 
 .icon-bar a:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .parallax {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-.parallax#home{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/goldengate.jpg');
-    background-attachment: fixed;
-    background-position: top;
-    /* background-repeat: no-repeat; */
-    background-size: cover;
+.parallax#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../images/goldengate.jpg');
+  background-attachment: fixed;
+  background-position: top;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
 }
-.parallax#portfolio{    
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/cliffside.jpg');
-    background-attachment: fixed;
-    background-position: top;
-    /* background-repeat: no-repeat; */
-    background-size: cover;
+.parallax#portfolio {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../images/cliffside.jpg');
+  background-attachment: fixed;
+  background-position: top;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
 }
-.parallax#rest{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/pieratsunset.jpg');
-    background-attachment: fixed;
-    background-position: top;
-    /* background-repeat: no-repeat; */
-    background-size: cover;
+.parallax#rest {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../images/pieratsunset.jpg');
+  background-attachment: fixed;
+  background-position: top;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
 }
 
 .parallax-container {
-    display: grid;
-    place-items: center;
-    height: 100%;
-    text-align: center;
-    color: #fff;
-    font-size: clamp(1rem, .5rem + 1vw, 3rem);
+  display: grid;
+  place-items: center;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: clamp(1rem, 0.5rem + 1vw, 3rem);
 }
-.parallax-container h1,h3{
-   letter-spacing: .1em;
-   font-family: 'Merriweather';
-   font-style: oblique;
+.parallax-container h1,
+h3 {
+  letter-spacing: 0.1em;
+  font-family: 'Merriweather';
+  font-style: oblique;
 }
 
 .separator {
-    width: 100%;
-    height: 10px;
-    background-color: coral;
+  width: 100%;
+  height: 10px;
+  background-color: coral;
 }
 
 #about-me {
-    justify-content: flex-start;
-    margin: 1% 5%;
+  justify-content: flex-start;
+  margin: 1% 5%;
 }
 
+#contact-me ul {
+  list-style-type: none;
+}
+#contact-me a:link,
+a:visited {
+  color: white;
+}
+#contact-me a:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(2px 4px 6px black);
+}
 
-#contact-me ul{
-    list-style-type: none;
+#main-footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
-#contact-me a:link, a:visited{
-    color: white;
+#main-footer .flex-contents-item {
+  margin-bottom: 80px;
+  text-align: left;
 }
-#contact-me a:hover{
-    transform: scale(1.1);
-    filter: drop-shadow(2px 4px 6px black);
-}
-
-#main-footer{
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-#main-footer .flex-contents-item{
-    margin-bottom: 80px;
-    text-align: left;
-}
-#main-footer .flex-contents-item ul{
-    margin-bottom: 80px;
-    padding: 5%;
+#main-footer .flex-contents-item ul {
+  margin-bottom: 80px;
+  padding: 5%;
 }
 
 /* #main-container {
@@ -162,60 +171,126 @@ body {
    font-family: 'Merriweather';
    font-style: oblique;
 } */
-#my-projects{
-    flex-direction: column;
-    margin: 0 5%;
+#my-projects {
+  flex-direction: column;
+  margin: 0 5%;
 }
-#my-projects .left-side-project{
-    margin-right: 15%;
-    text-align: left;
-    
+#my-projects .left-side-project {
+  margin-right: 15%;
+  text-align: left;
 }
-#my-projects .right-side-project{
-    margin-left: 15%;
-    text-align: right;
+#my-projects .right-side-project {
+  margin-left: 15%;
+  text-align: right;
 }
 
 #navbar {
-    background-color: #555;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
+  background-color: #555;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
 }
-#navbar a{
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 7px 5px 0px;
+#navbar a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 7px 5px 0px;
 }
-#navbar a:hover{
-    transform: scale(1.1);
-    font-weight: bold;
+#navbar a:hover {
+  transform: scale(1.1);
+  font-weight: bold;
 }
 
 #who-am-i {
-    font-family: 'Oswald';
-    margin: 0, 0, 0, 10%;
-    display: inline-flex;
+  font-family: 'Oswald';
+  margin: 0, 0, 0, 10%;
+  display: inline-flex;
 }
-#who-am-i span{
-    font-family: 'Oswald', sans-serif;
-    line-height: 95%;
+#who-am-i span {
+  font-family: 'Oswald', sans-serif;
+  line-height: 95%;
 }
-#who-am-i .left-words{
-    font-size: clamp(2rem, .5rem + 10vw, 10rem);
-    letter-spacing: -5px;
-    line-height: 90%;
-    text-align: right;
+#who-am-i .left-words {
+  font-size: clamp(2rem, 0.5rem + 10vw, 10rem);
+  letter-spacing: -5px;
+  line-height: 90%;
+  text-align: right;
 }
-#who-am-i .right-words{
-    font-size: clamp(4rem, 1rem + 20vw, 20rem);
-    font-weight: 100;
-    margin-left: -0.04em;
-    margin: 0;
-    letter-spacing: -5px;
-    line-height: 90%;
-    text-align: right;
+#who-am-i .right-words {
+  font-size: clamp(4rem, 1rem + 20vw, 20rem);
+  font-weight: 100;
+  margin-left: -0.04em;
+  margin: 0;
+  letter-spacing: -5px;
+  line-height: 90%;
+  text-align: right;
+}
+
+/* Scroll arrow */
+.arrow {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  /* transform-origin: 50% 50%; */
+  /* transform: translate3d(-50%, -50%, 0); */
+}
+.arrow-first {
+  -webkit-animation: arrow-movement 2s ease-in-out infinite;
+  animation: arrow-movement 2s ease-in-out infinite;
+}
+.arrow-second {
+  -webkit-animation: arrow-movement 2s 1s ease-in-out infinite;
+  animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+.arrow:before,
+.arrow:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+}
+.arrow:before {
+  transform: rotate(45deg) translateX(-23%);
+  transform-origin: top left;
+}
+.arrow:after {
+  transform: rotate(-45deg) translateX(23%);
+  transform-origin: top right;
+}
+@-webkit-keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 90%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 90%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.is-hidden {
+  visibility: hidden;
+}
+.is-visible {
+  visibility: visible;
 }
