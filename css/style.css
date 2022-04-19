@@ -229,15 +229,13 @@ a:visited {
 }
 
 /* Scroll arrow */
-.arrow {
+/* .arrow {
   opacity: 0;
   position: absolute;
   left: 50%;
   top: 95%;
-  /* transform-origin: 50% 50%; */
-  /* transform: translate3d(-50%, -50%, 0); */
-}
-.arrow-first {
+} */
+/* .arrow-first {
   -webkit-animation: arrow-movement 2s ease-in-out infinite;
   animation: arrow-movement 2s ease-in-out infinite;
 }
@@ -293,4 +291,4 @@ a:visited {
 }
 .is-visible {
   visibility: visible;
-}
+} */
